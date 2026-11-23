@@ -1,0 +1,149 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f7fc;
+    color: #222;
+}
+
+/* Header */
+header {
+    background: #101c3a;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    color: #00d4ff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #00d4ff;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 450px;
+    background: linear-gradient(135deg, #101c3a, #3157a4);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #00d4ff;
+    color: #101c3a;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Services */
+section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #00000012;
+}
+
+.card h3 {
+    color: #3157a4;
+    margin-bottom: 15px;
+}
+
+/* About */
+.about {
+    background: #e8efff;
+}
+
+/* Contact */
+.contact {
+    background: #101c3a;
+    color: white;
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 450px;
+    padding: 14px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+button {
+    padding: 14px 35px;
+    background: #00d4ff;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #080f21;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 8px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
